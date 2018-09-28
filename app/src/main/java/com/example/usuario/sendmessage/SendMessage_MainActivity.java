@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.usuario.sendmessage.model.Message;
+
 
 /**
  * Esta clase envía un mensaje de un usuario a otro
@@ -58,7 +60,9 @@ public class SendMessage_MainActivity extends AppCompatActivity {
 //                        bundle.putString("Author",edAuthor.getText().toString());
 //                        bundle.putString("Message",edMessage.getText().toString());
                         Message message = new Message();
-                        message.setA
+                        message.setAuthor(edAuthor.getText().toString());
+                        message.setMessage(edMessage.getText().toString());
+                        bundle.putSerializable("Message",message);
 
                         //  2. Se crea el mensaje o Intent explícito. Se conoce la
                         //     Activity origen y la Activity destino.

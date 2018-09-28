@@ -30,4 +30,16 @@ public class Message implements Serializable {
     public String getMessage() {
         return message;
     }
+
+    /**
+     * Esto es la sobrecarga del ToString()
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Message{" +
+                "author='" + author + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }
