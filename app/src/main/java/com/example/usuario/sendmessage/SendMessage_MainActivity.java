@@ -55,8 +55,10 @@ public class SendMessage_MainActivity extends AppCompatActivity {
 
                         //  1. Crear un objeto contenedor o Bundle para añadir el autor y el mensaje
                         Bundle bundle = new Bundle();
-                        bundle.putString("Author",edAuthor.getText().toString());
-                        bundle.putString("Message",edMessage.getText().toString());
+//                        bundle.putString("Author",edAuthor.getText().toString());
+//                        bundle.putString("Message",edMessage.getText().toString());
+                        Message message = new Message();
+                        message.setA
 
                         //  2. Se crea el mensaje o Intent explícito. Se conoce la
                         //     Activity origen y la Activity destino.
