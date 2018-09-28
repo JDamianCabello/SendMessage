@@ -1,5 +1,5 @@
 *.iml
-.grandle
+.gradle
 /local.poperties
 /.idea
 .DS_Store
