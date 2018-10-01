@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
-    api-level="23"
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
     build-mode="FULL"
-    density="420dpi"
+    density="xhdpi"
     format="10"
     plugin-version="3.2.0"
-    timestamp="1538138703936"
+    timestamp="1538380299560"
     token="7991589943696928936"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1504" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="428" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
-    <artifact
-        location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
     <artifact
         location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
@@ -40,6 +34,9 @@
         type="SPLIT" />
     <artifact
         location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
         location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -59,17 +56,14 @@
     <artifact
         location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
+    <artifact
+        location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1538138703936"
+        timestamp="1538380299560"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
         <artifact
             location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
@@ -81,6 +75,9 @@
             type="SPLIT" />
         <artifact
             location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -99,6 +96,9 @@
             type="SPLIT" />
         <artifact
             location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/usuario/AndroidStudioProjects/SendMessage/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
     </build>
 

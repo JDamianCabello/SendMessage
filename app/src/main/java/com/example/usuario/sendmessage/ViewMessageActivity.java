@@ -8,6 +8,8 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.usuario.sendmessage.model.Message;
+
 /**
  * Esta clase recibe un mensaje de otra actividad. La etiqueta de Javadoc @link
  * se utiliza en la definición de clase o metodo. No despues de las etiquetas @author
@@ -24,7 +26,7 @@ import android.widget.TextView;
 
 public class ViewMessageActivity extends AppCompatActivity {
 
-    private TextView msg;
+    private TextView msgTV;
     private TextView autor;
     private static final String TAG = "viewMessage";
 
@@ -35,7 +37,7 @@ public class ViewMessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_message);
 
         autor=findViewById(R.id.tvAutor);
-        msg=findViewById(R.id.tvMensaje);
+        msgTV=findViewById(R.id.tvMensaje);
 
 
 
@@ -44,11 +46,12 @@ public class ViewMessageActivity extends AppCompatActivity {
 
         //  2. Recoger el objeto Bundle del Intent
         Bundle bundle = intent.getExtras();
+        Message msg = (Message)bundle.getSerializable("Message");
 
         //  3. Asignar los strings a sus componentes
-        autor.setText(bundle.getString("Author"));
-        msg.setText(bundle.getString("Message"));
-        Log.d(TAG,"Autor: "+autor.getText().toString() + " Mensaje: " + msg.getText().toString());
+        autor.setText(msg.getAuthor());
+        msgTV.setText(msg.getMessage());
+        Log.d(TAG,"Autor: "+autor.getText().toString() + " Mensaje: " + msgTV.getText().toString());
 
     }
 }
